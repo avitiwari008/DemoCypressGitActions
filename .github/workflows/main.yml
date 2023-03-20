@@ -12,7 +12,7 @@ jobs:
           echo "step to install dependencies"
           npm install
       - name: run Tests Cypress
-        uses: cypress.io/github-action@v5
+        uses: cypress-io/github-action@v5
         env: 
           CI: true   
 
