@@ -1,0 +1,18 @@
+name: Cypress Tests
+on: [push]
+jobs:
+  lintTest:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone-Repo
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          echo "step to install dependencies"
+          npm install
+      - name: run Tests Cypress
+        uses: cypress.io/github-action@v5
+        env: 
+          CI: true   
+

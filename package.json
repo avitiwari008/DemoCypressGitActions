@@ -1,4 +1,5 @@
-{
+{ 
+  "name": "DemoCypressGitActions",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -6,7 +7,8 @@
     "start": "next start",
     "test": "cypress run",
     "cypress:open": "cypress open",
-    "cypress:run":"cypress run"
+    "cypress:run":"cypress run",
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "latest",
