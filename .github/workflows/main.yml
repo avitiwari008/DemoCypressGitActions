@@ -11,12 +11,15 @@ jobs:
         run: |
           echo "step to install dependencies"
           npm install
-      - name: Start dev server
-        run: |
-          echo "starting dev server"
-          npm run dev 
       - name: run Tests Cypress
         uses: cypress-io/github-action@v5
+        with: 
+          start: npm run dev
+          wait-on: 'http://localhost:3000'
+          wait-on-timeout: 120
+          browser: chrome
+          record: true
+          parallel: true
         env: 
           CI: true   
 
