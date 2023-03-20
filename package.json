@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "cypress run",
+    "cypress:open": "cypress open",
+    "cypress:run":"cypress run"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "cypress": "^12.8.1"
+  }
+}
